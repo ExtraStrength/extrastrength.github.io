@@ -313,58 +313,6 @@ nav,
   box-shadow: inset 0 0 0 1px #006999;
   color: white; }
 
-html {
-  height: 100%; }
-
-body {
-  font-family: "graphik", 'Helvetica Neue', Helvetica, sans-serif;
-  height: 100%; }
-
-img {
-  max-width: 100%; }
-
-.BlockContainer {
-  margin: -10px;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex; }
-
-@media only screen and (max-width: 985px) {
-  .BlockContainer.BlockContainer--ColumnAt1024 {
-    -ms-flex-direction: column;
-    -webkit-flex-direction: column;
-    flex-direction: column; } }
-
-.Block {
-  margin: 10px; }
-
-.Block--VerticalCenter {
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center; }
-
-wrapper {
-  padding: 0 10%;
-  width: 100%;
-  display: block;
-  max-width: 1400px;
-  margin: 0 auto; }
-
-.disclaimer {
-  font-size: 14px;
-  color: #999; }
-
-.download-workbench-container {
-  margin: 30px 0; }
-
-.download-workbench-container .Button {
-  margin-top: 4px;
-  margin-bottom: 4px; }
-
-/* HEADER */
 header {
   width: 100%;
   background-color: white;
@@ -376,6 +324,12 @@ header {
   -ms-user-select: none;
   -o-user-select: none;
   user-select: none; }
+
+header.Header--Workbench {
+  padding: 12% 0; }
+  @media only screen and (max-width: 985px) {
+    header.Header--Workbench {
+      padding-top: 108px; } }
 
 header h1 {
   color: #222;
@@ -390,25 +344,30 @@ header h1 {
   @media only screen and (max-width: 985px) {
     header h1 {
       font-size: 100px; } }
+  @media only screen and (max-width: 680px) {
+    header h1 {
+      margin-top: 48px; } }
   @media only screen and (max-width: 540px) {
     header h1 {
       font-size: 48px;
       margin: 0 0 0 -1px;
-      letter-spacing: 0;
-      margin-top: 48px; } }
+      letter-spacing: 0; } }
 
 h1.h1-smaller {
   font-size: 76px;
   letter-spacing: -5px; }
+  @media only screen and (max-width: 985px) {
+    h1.h1-smaller {
+      margin-top: 36px; } }
   @media only screen and (max-width: 540px) {
     h1.h1-smaller {
       font-size: 48px;
-      margin: 0 0 0 -1px;
+      margin-left: -1px;
       letter-spacing: 0;
-      margin-top: 48px; } }
+      margin-top: 24px; } }
 
 header h1.colorful {
-  color: #70B125;
+  color: #70b125;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-image: -webkit-linear-gradient(left, #00529e 0%, #00529e 9%, #0093d7 9%, #0093d7 18%, #00833f 18%, #00833f 27%, #70b125 27%, #70b125 36%, #d5dc07 36%, #d5dc07 45%, #ede500 45%, #ede500 54%, #f2d201 54%, #f2d201 63%, #f8bc08 63%, #f8bc08 72%, #f5921a 72%, #f5921a 81%, #ed641a 81%, #ed641a 90%, #ea401a 90%, #ea401a 100%); }
@@ -436,7 +395,73 @@ subhead.subhead-smaller {
 subhead.subhead-light {
   color: #666666; }
 
-/* END HEADER */
+.BlockContainer {
+  margin: -10px;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; }
+
+@media only screen and (max-width: 985px) {
+  .BlockContainer.BlockContainer--ColumnAt1024 {
+    -ms-flex-direction: column-reverse;
+    -webkit-flex-direction: column-reverse;
+    flex-direction: column-reverse; } }
+
+.Block {
+  margin: 10px; }
+
+@media only screen and (max-width: 985px) {
+  .Block--WorkbenchTitle {
+    text-align: center; } }
+
+.Block--TextCenter {
+  text-align: center; }
+
+.Block--VerticalCenter {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center; }
+
+.disclaimer {
+  font-size: 14px;
+  color: #999; }
+
+.download-workbench-container {
+  margin: 30px 0; }
+
+.download-workbench-container .Button {
+  margin-top: 4px;
+  margin-bottom: 4px; }
+
+html {
+  height: 100%; }
+
+body {
+  font-family: "graphik", 'Helvetica Neue', Helvetica, sans-serif;
+  height: 100%; }
+
+h3 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #222;
+  margin: 0; }
+
+img {
+  max-width: 100%; }
+
+wrapper {
+  padding: 0 10%;
+  width: 100%;
+  display: block;
+  max-width: 1400px;
+  margin: 0 auto; }
+
 /* BODY */
 section {
   padding: 10% 0; }
@@ -448,7 +473,7 @@ section {
   background-color: #1793D7; }
 
 .Section--Red {
-  background-color: #EA401A; }
+  background-color: #ea401a; }
 
 title {
   color: rgba(0, 0, 0, 0.3);
@@ -506,12 +531,6 @@ p > a {
   text-transform: uppercase;
   display: block;
   letter-spacing: 3px; }
-
-h3 {
-  font-size: 24px;
-  font-weight: 500;
-  color: #222;
-  margin: 0; }
 
 .Features {
   display: -ms-flexbox;

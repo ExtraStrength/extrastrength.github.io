@@ -1,6 +1,7 @@
 @import "_layout";
 @import "_media-queries";
 @import "_mixins";
+@import "_colors";
 
 * {
   box-sizing: border-box;
@@ -10,6 +11,7 @@
 
 @import "NavBar";
 @import "Button";
+@import "Header";
 
 html {
   height: 100%;
@@ -20,28 +22,15 @@ body {
   height: 100%;
 }
 
+h3 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #222;
+  margin: 0;
+}
+
 img {
   max-width: 100%;
-}
-
-.BlockContainer {
-  margin: -10px;
-  @include layout;
-}
-
-.BlockContainer.BlockContainer--ColumnAt1024 {
-  @include mobile-and-tablet {
-    @include layout-vertical;
-  }
-}
-
-.Block {
-  margin: 10px;
-}
-
-.Block--VerticalCenter {
-  @include layout;
-  @include layout-center;
 }
 
 wrapper {
@@ -51,137 +40,6 @@ wrapper {
   max-width: 1400px;
   margin: 0 auto;
 }
-
-.disclaimer {
-  font-size: 14px;
-  color: #999;
-}
-
-.download-workbench-container {
-  margin: 30px 0;
-}
-
-.download-workbench-container .Button {
-  margin-top: 4px;
-  margin-bottom: 4px;
-}
-
-/* HEADER */
-
-header {
-  width: 100%;
-  background-color: white;
-  position: relative;
-  overflow: hidden;
-  padding: 18% 0;
-  @include user-select(none);
-}
-
-header h1 {
-  color: #222;
-  display: inline-block;
-  font-weight: 500;
-  font-size: 124px;
-  line-height: 1em;
-  letter-spacing: -6px;
-  margin: 0 0 0 -10px;
-  padding: 0 0 36px;
-  transition: all .2s;
-
-  @include mobile-and-tablet {
-    font-size: 100px;
-  }
-
-  @include mobile-only {
-    font-size: 48px;
-    margin: 0 0 0 -1px;
-    letter-spacing: 0;
-    margin-top: 48px;
-  }
-}
-
-h1.h1-smaller {
-  font-size: 76px;
-  letter-spacing: -5px;
-
-  @include mobile-only {
-    font-size: 48px;
-    margin: 0 0 0 -1px;
-    letter-spacing: 0;
-    margin-top: 48px;
-  }
-}
-
-header h1.colorful {
-  color: #70B125;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-image: -webkit-linear-gradient(left,
-    #00529E 0%,
-    #00529E 9%,
-
-    #0093D7 9%,
-    #0093D7 18%,
-
-    #00833F 18%,
-    #00833F 27%,
-
-    #70B125 27%,
-    #70B125 36%,
-
-    #D5DC07 36%,
-    #D5DC07 45%,
-
-    #EDE500 45%,
-    #EDE500 54%,
-
-    #F2D201 54%,
-    #F2D201 63%,
-
-    #F8BC08 63%,
-    #F8BC08 72%,
-
-    #F5921A 72%,
-    #F5921A 81%,
-
-    #ED641A 81%,
-    #ED641A 90%,
-
-    #EA401A 90%,
-    #EA401A 100%);
-}
-
-subhead {
-  color: #222;
-  opacity: 1;
-  font-size: 28px;
-  line-height: 1.4;
-  display: block;
-  width: 100%;
-  margin: 0;
-  font-weight: 400;
-  transition: font-size .2s;
-
-  @include mobile-and-tablet {
-    font-size: 24px;
-  }
-}
-
-subhead.subhead-smaller {
-  font-size: 24px;
-
-  @include mobile-and-tablet {
-    font-size: 20px;
-  }
-}
-
-subhead.subhead-light {
-  color: hsl(0,0%,40%);
-}
-
-
-/* END HEADER */
-
 
 /* BODY */
 
@@ -198,7 +56,7 @@ section {
 }
 
 .Section--Red {
-  background-color: #EA401A;
+  background-color: $color_red;
 }
 
 title {
@@ -269,13 +127,6 @@ p > a {
   letter-spacing: 3px;
 }
 
-h3 {
-  font-size: 24px;
-  font-weight: 500;
-  color: #222;
-  margin: 0;
-}
-
 .Features {
   @include layout;
   margin: -30px;
@@ -308,39 +159,7 @@ h3 {
   width: 100%;
   height: 400px;
   display: block;
-  background-image: linear-gradient(90deg,
-    #00529E 0%,
-    #00529E 9%,
-
-    #0093D7 9%,
-    #0093D7 18%,
-
-    #00833F 18%,
-    #00833F 27%,
-
-    #70B125 27%,
-    #70B125 36%,
-
-    #D5DC07 36%,
-    #D5DC07 45%,
-
-    #EDE500 45%,
-    #EDE500 54%,
-
-    #F2D201 54%,
-    #F2D201 63%,
-
-    #F8BC08 63%,
-    #F8BC08 72%,
-
-    #F5921A 72%,
-    #F5921A 81%,
-
-    #ED641A 81%,
-    #ED641A 90%,
-
-    #EA401A 90%,
-    #EA401A 100%);
+  background-image: linear-gradient(90deg, $rainbow_stepped);
 
   @include mobile-only {
     height: 100px;
