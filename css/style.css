@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  font-family: "graphik";
+  font-family: "graphik", 'Helvetica Neue', Helvetica, sans-serif;
   height: 100%;
 }
 
@@ -21,8 +21,7 @@ wrapper {
 
 header {
   width: 100%;
-  background-color: #132144;
-  background-image: url(video/ScubaVideo.poster.progressive.jpg);
+  background-color: white;
   height: 100%;
   position: relative;
   overflow: hidden;
@@ -69,31 +68,27 @@ header .content {
 }
 
 header h1 {
-  color: white;
+  color: #222;
   /*text-transform: uppercase;*/
   font-weight: 500;
   font-size: 124px;
-  line-height: 124px;
+  line-height: 1em;
   letter-spacing: -6px;
-  margin: 0;
+  margin: 0 0 36px;
   padding: 0;
+  transition: all .2s;
 }
 
-header h1 span {
-  font-size: 100px;
-  padding: 0 8px 0 12px;
+@media only screen and (max-width: 600px) {
+  header h1 {
+    font-size: 48px;
+    letter-spacing: 0;
+  }
 }
 
-header .rule {
-  height: 6px;
-  background-color: white;
-  margin: 16px 0 18px;
-  max-width: 648px;
-}
 
 header subhead {
-  /*color: hsl(221, 51%, 92%);*/
-  color: white;
+  color: #222;
   opacity: 1;
   font-size: 28px;
   line-height: 1.2;
@@ -104,20 +99,20 @@ header subhead {
 }
 
 header .copy {
-  max-width: 600px;
+  max-width: 760px;
   margin-top: 40px;
 }
 
 header p {
-  color: white;
+  color: #999;
   font-size: 18px;
   font-weight: 400;
-  line-height: 1.4;
+  line-height: 1.6;
 }
 
 header p > a {
-  color: white;
-  background-image: linear-gradient(to bottom, hsla(0, 0%, 100%, 0) 50%, hsla(0, 0%, 100%, .8) 50%);
+  color: #222;
+  background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0) 50%, hsla(0, 0%, 0%, .8) 50%);
   text-decoration: none;
   background-size: 2px 2px;
   background-repeat: repeat-x;
