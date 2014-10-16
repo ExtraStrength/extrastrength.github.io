@@ -520,22 +520,6 @@
 	"buffers":
 	[
 		{
-			"file": "workbench/index.html",
-			"settings":
-			{
-				"buffer_size": 5683,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "css/style.scss",
-			"settings":
-			{
-				"buffer_size": 2565,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "css/header.scss",
 			"settings":
 			{
@@ -545,18 +529,26 @@
 			}
 		},
 		{
-			"file": "css/_media-queries.scss",
-			"settings":
-			{
-				"buffer_size": 1451,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "css/_colors.scss",
 			"settings":
 			{
 				"buffer_size": 947,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "workbench/index.html",
+			"settings":
+			{
+				"buffer_size": 6370,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/style.scss",
+			"settings":
+			{
+				"buffer_size": 3778,
 				"line_ending": "Unix"
 			}
 		}
@@ -642,14 +634,14 @@
 	"file_history":
 	[
 		"/Users/brianarmstrong/Github/extrastrength.github.io/css/_layout.scss",
-		"/Users/brianarmstrong/Github/extrastrength.github.io/bower_components/polymer/layout.html",
+		"/Users/brianarmstrong/Github/extrastrength.github.io/css/_media-queries.scss",
 		"/Users/brianarmstrong/Github/extrastrength.github.io/index.html",
+		"/Users/brianarmstrong/Github/extrastrength.github.io/bower_components/polymer/layout.html",
 		"/Users/brianarmstrong/Github/extrastrength.github.io/css/style.css",
 		"/Users/brianarmstrong/Github/extrastrength.github.io/css/style.scss",
 		"/Users/brianarmstrong/Github/extrastrength.github.io/css/Button.scss",
 		"/Users/brianarmstrong/Github/extrastrength.github.io/css/NavBar.scss",
 		"/Users/brianarmstrong/Github/extrastrength.github.io/workbench/index.html",
-		"/Users/brianarmstrong/Github/extrastrength.github.io/css/_media-queries.scss",
 		"/Users/brianarmstrong/Github/CanopyRails/app/assets/stylesheets/product-cards.scss",
 		"/Users/brianarmstrong/Github/CanopyRails/app/assets/stylesheets/nav-page-level.scss",
 		"/Users/brianarmstrong/Github/CanopyRails/app/assets/stylesheets/pivot-embed.scss",
@@ -914,6 +906,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"2",
+			"backround-color",
+			"RainbowStripe ",
 			"\";\n",
 			"#EA401A",
 			"#ED641A",
@@ -1038,10 +1033,7 @@
 			"tasteful",
 			"welcome-visitor-message",
 			"cards-container",
-			"promoted-category",
-			"nav-level",
-			"sticky",
-			"globalNavContainer"
+			"promoted-category"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1062,23 +1054,23 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "workbench/index.html",
+					"file": "css/header.scss",
 					"settings":
 					{
-						"buffer_size": 5683,
+						"buffer_size": 2137,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2563,
-								2563
+								182,
+								182
 							]
 						],
 						"settings":
@@ -1087,6 +1079,89 @@
 							[
 								{
 									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"auto_name": "header.scss",
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "css/_colors.scss",
+					"settings":
+					{
+						"buffer_size": 947,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								475,
+								475
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "workbench/index.html",
+					"settings":
+					{
+						"buffer_size": 6370,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5416,
+								5416
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
 									"selector": "text.html"
 								},
 								{
@@ -1099,91 +1174,25 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 197.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "css/style.scss",
-					"settings":
-					{
-						"buffer_size": 2565,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								574,
-								574
-							]
-						],
-						"settings":
-						{
-							"auto_complete_triggers":
-							[
-								{
-									"characters": "<",
-									"selector": "text.html"
-								},
-								{
-									"characters": ".#",
-									"selector": "text.html"
-								}
-							],
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 130.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "css/header.scss",
-					"settings":
-					{
-						"buffer_size": 2137,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1679,
-								1679
-							]
-						],
-						"settings":
-						{
-							"auto_name": "header.scss",
-							"syntax": "Packages/SCSS/SCSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 1556.0,
+						"translation.y": 3171.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "css/_media-queries.scss",
+					"file": "css/style.scss",
 					"settings":
 					{
-						"buffer_size": 1451,
+						"buffer_size": 3778,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								647,
-								630
+								3002,
+								3002
 							]
 						],
 						"settings":
@@ -1197,6 +1206,10 @@
 								{
 									"characters": ".#",
 									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
 								}
 							],
 							"syntax": "Packages/SCSS/SCSS.tmLanguage",
@@ -1204,35 +1217,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "css/_colors.scss",
-					"settings":
-					{
-						"buffer_size": 947,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								947,
-								947
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 3497.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1290,20 +1275,20 @@
 		"selected_items":
 		[
 			[
-				"media",
-				"css/_media-queries.scss"
-			],
-			[
 				"layout",
 				"css/_layout.scss"
 			],
 			[
-				"style",
-				"css/style.scss"
-			],
-			[
 				"index",
 				"index.html"
+			],
+			[
+				"media",
+				"css/_media-queries.scss"
+			],
+			[
+				"style",
+				"css/style.scss"
 			],
 			[
 				"work",
