@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"bo",
+				"bottom"
+			],
+			[
 				"margin-",
 				"margin-top"
 			],
@@ -16,24 +32,12 @@
 				"margin"
 			],
 			[
-				"padd",
-				"padding-right"
-			],
-			[
 				"padding",
 				"padding-left"
 			],
 			[
-				"margin",
-				"margin-right"
-			],
-			[
 				"color",
 				"color_background"
-			],
-			[
-				"back",
-				"background-position"
 			],
 			[
 				"text",
@@ -510,44 +514,49 @@
 			[
 				"ilin",
 				"inline-block"
-			],
-			[
-				"COLO",
-				"color_gray_middle"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
+			"file": "workbench/index.html",
+			"settings":
+			{
+				"buffer_size": 5683,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "css/style.scss",
 			"settings":
 			{
-				"buffer_size": 4670,
+				"buffer_size": 2565,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "css/_layout.scss",
+			"file": "css/header.scss",
 			"settings":
 			{
-				"buffer_size": 7476,
+				"buffer_size": 2137,
+				"line_ending": "Unix",
+				"name": "header.scss"
+			}
+		},
+		{
+			"file": "css/_media-queries.scss",
+			"settings":
+			{
+				"buffer_size": 1451,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "css/NavBar.scss",
+			"file": "css/_colors.scss",
 			"settings":
 			{
-				"buffer_size": 866,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "css/Button.scss",
-			"settings":
-			{
-				"buffer_size": 1119,
+				"buffer_size": 947,
 				"line_ending": "Unix"
 			}
 		}
@@ -632,11 +641,15 @@
 	},
 	"file_history":
 	[
-		"/Users/brianarmstrong/Github/extrastrength.github.io/workbench/index.html",
+		"/Users/brianarmstrong/Github/extrastrength.github.io/css/_layout.scss",
+		"/Users/brianarmstrong/Github/extrastrength.github.io/bower_components/polymer/layout.html",
 		"/Users/brianarmstrong/Github/extrastrength.github.io/index.html",
+		"/Users/brianarmstrong/Github/extrastrength.github.io/css/style.css",
+		"/Users/brianarmstrong/Github/extrastrength.github.io/css/style.scss",
 		"/Users/brianarmstrong/Github/extrastrength.github.io/css/Button.scss",
-		"/Users/brianarmstrong/Github/extrastrength.github.io/css/_media-queries.scss",
 		"/Users/brianarmstrong/Github/extrastrength.github.io/css/NavBar.scss",
+		"/Users/brianarmstrong/Github/extrastrength.github.io/workbench/index.html",
+		"/Users/brianarmstrong/Github/extrastrength.github.io/css/_media-queries.scss",
 		"/Users/brianarmstrong/Github/CanopyRails/app/assets/stylesheets/product-cards.scss",
 		"/Users/brianarmstrong/Github/CanopyRails/app/assets/stylesheets/nav-page-level.scss",
 		"/Users/brianarmstrong/Github/CanopyRails/app/assets/stylesheets/pivot-embed.scss",
@@ -755,11 +768,7 @@
 		"/Users/brianarmstrong/Github/CanopyRails/app/assets/stylesheets/extension.scss",
 		"/Users/brianarmstrong/Github/CanopyRails/app/assets/stylesheets/admin/admin-forms.scss",
 		"/Users/brianarmstrong/Github/CanopyRails/app/views/newsletters/edit.html.haml",
-		"/Users/brianarmstrong/Github/CanopyRails/app/controllers/features_controller.rb",
-		"/Users/brianarmstrong/Github/CanopyRails/app/models/feature.rb",
-		"/Users/brianarmstrong/Github/CanopyRails/lib/tasks/fetch_availability.rake",
-		"/Users/brianarmstrong/Github/CanopyRails/app/assets/javascripts/blog.js",
-		"/Users/brianarmstrong/Github/CanopyRails/app/assets/stylesheets/admin/admin-header.scss"
+		"/Users/brianarmstrong/Github/CanopyRails/app/controllers/features_controller.rb"
 	],
 	"find":
 	{
@@ -905,6 +914,23 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"\";\n",
+			"#EA401A",
+			"#ED641A",
+			"#F5921A",
+			"#F8BC08",
+			"#F2D201",
+			"#EDE500",
+			"#D5DC07",
+			"#70B125",
+			"#00833F",
+			"#0093D7",
+			"#00529E",
+			",\n#",
+			"#",
+			"block",
+			"Block",
+			"block",
 			"button",
 			"title",
 			"dark",
@@ -1015,24 +1041,7 @@
 			"promoted-category",
 			"nav-level",
 			"sticky",
-			"globalNavContainer",
-			"windowScrollTop",
-			"offsetFromTopOfViewport",
-			"globalNavContainer",
-			"global-nav-co",
-			"global-nav-cotn",
-			"back-to",
-			"sign-up-button",
-			"welcome-visitor-message",
-			"link-card",
-			"Discover and collect amazing",
-			"trackEvent",
-			"self.dig",
-			"amazonapi",
-			"trackEvent",
-			"self.look",
-			"amazonapi",
-			"amazon"
+			"globalNavContainer"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1053,23 +1062,23 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "css/style.scss",
+					"file": "workbench/index.html",
 					"settings":
 					{
-						"buffer_size": 4670,
+						"buffer_size": 5683,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								776,
-								749
+								2563,
+								2563
 							]
 						],
 						"settings":
@@ -1083,36 +1092,32 @@
 								{
 									"characters": ".#",
 									"selector": "text.html"
-								},
-								{
-									"characters": ".#",
-									"selector": "text.html"
 								}
 							],
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 197.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "css/_layout.scss",
+					"file": "css/style.scss",
 					"settings":
 					{
-						"buffer_size": 7476,
+						"buffer_size": 2565,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2215,
-								2204
+								574,
+								574
 							]
 						],
 						"settings":
@@ -1126,10 +1131,6 @@
 								{
 									"characters": ".#",
 									"selector": "text.html"
-								},
-								{
-									"characters": ".#",
-									"selector": "text.html"
 								}
 							],
 							"syntax": "Packages/SCSS/SCSS.tmLanguage",
@@ -1137,25 +1138,52 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 130.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "css/NavBar.scss",
+					"file": "css/header.scss",
 					"settings":
 					{
-						"buffer_size": 866,
+						"buffer_size": 2137,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								773,
-								773
+								1679,
+								1679
+							]
+						],
+						"settings":
+						{
+							"auto_name": "header.scss",
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1556.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "css/_media-queries.scss",
+					"settings":
+					{
+						"buffer_size": 1451,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								647,
+								630
 							]
 						],
 						"settings":
@@ -1164,10 +1192,6 @@
 							[
 								{
 									"characters": "<",
-									"selector": "text.html"
-								},
-								{
-									"characters": ".#",
 									"selector": "text.html"
 								},
 								{
@@ -1186,40 +1210,25 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "css/Button.scss",
+					"buffer": 4,
+					"file": "css/_colors.scss",
 					"settings":
 					{
-						"buffer_size": 1119,
+						"buffer_size": 947,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								519,
-								519
+								947,
+								947
 							]
 						],
 						"settings":
 						{
-							"auto_complete_triggers":
-							[
-								{
-									"characters": "<",
-									"selector": "text.html"
-								},
-								{
-									"characters": ".#",
-									"selector": "text.html"
-								},
-								{
-									"characters": ".#",
-									"selector": "text.html"
-								}
-							],
 							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"tab_size": 2,
+							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
@@ -1281,12 +1290,28 @@
 		"selected_items":
 		[
 			[
-				"butt",
-				"css/Button.scss"
-			],
-			[
 				"media",
 				"css/_media-queries.scss"
+			],
+			[
+				"layout",
+				"css/_layout.scss"
+			],
+			[
+				"style",
+				"css/style.scss"
+			],
+			[
+				"index",
+				"index.html"
+			],
+			[
+				"work",
+				"workbench/index.html"
+			],
+			[
+				"butt",
+				"css/Button.scss"
 			],
 			[
 				"nav",
@@ -1331,14 +1356,6 @@
 			[
 				"mixins",
 				"app/assets/stylesheets/_mixins.scss"
-			],
-			[
-				"layout",
-				"app/assets/stylesheets/_layout.scss"
-			],
-			[
-				"style",
-				"app/assets/stylesheets/style.css.scss.erb"
 			],
 			[
 				"admin",
@@ -1783,14 +1800,6 @@
 			[
 				"apicontrol",
 				"app/controllers/api_controller.rb"
-			],
-			[
-				"notifica",
-				"app/assets/stylesheets/notifications.scss"
-			],
-			[
-				"commentnotific",
-				"app/views/users/_comment_notification.html.haml"
 			]
 		],
 		"width": 0.0
