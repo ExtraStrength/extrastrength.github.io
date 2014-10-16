@@ -24,7 +24,7 @@ header {
   background-color: white;
   position: relative;
   overflow: hidden;
-  padding: 16% 0;
+  padding: 18% 0;
 }
 
 header video {
@@ -113,7 +113,10 @@ subhead {
 
 .dark-section.about {
   background-color: #222;
+}
 
+section.toolbelt {
+  background-color: #1793D7;
 }
 
 section {
@@ -130,7 +133,7 @@ title {
 }
 
 .dark-section title {
-  color: hsla(0, 0%, 100%, .2);
+  color: hsla(0, 0%, 100%, .5);
 }
 
 p {
@@ -151,7 +154,7 @@ p > a {
 }
 
 .dark-section p {
-  color: #aaa;
+  color: hsla(0, 0%, 100%, .75);
 }
 
 .dark-section p > a {
