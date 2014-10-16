@@ -320,6 +320,32 @@ body {
   font-family: "graphik", 'Helvetica Neue', Helvetica, sans-serif;
   height: 100%; }
 
+img {
+  max-width: 100%; }
+
+.BlockContainer {
+  margin: -10px;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; }
+
+@media only screen and (max-width: 985px) {
+  .BlockContainer.BlockContainer--ColumnAt1024 {
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column; } }
+
+.Block {
+  margin: 10px; }
+
+.Block--VerticalCenter {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center; }
+
 wrapper {
   padding: 0 10%;
   width: 100%;
@@ -351,21 +377,6 @@ header {
   -o-user-select: none;
   user-select: none; }
 
-header video {
-  min-width: 100%;
-  min-height: 100%;
-  /*-webkit-filter: blur(2px);*/
-  z-index: 1; }
-
-header img {
-  min-width: 100%;
-  min-height: 100%;
-  z-index: 1; }
-
-header .content {
-  width: 100%;
-  padding: 0 10%; }
-
 header h1 {
   color: #222;
   display: inline-block;
@@ -381,6 +392,16 @@ header h1 {
       font-size: 100px; } }
   @media only screen and (max-width: 540px) {
     header h1 {
+      font-size: 48px;
+      margin: 0 0 0 -1px;
+      letter-spacing: 0;
+      margin-top: 48px; } }
+
+h1.h1-smaller {
+  font-size: 76px;
+  letter-spacing: -5px; }
+  @media only screen and (max-width: 540px) {
+    h1.h1-smaller {
       font-size: 48px;
       margin: 0 0 0 -1px;
       letter-spacing: 0;
@@ -405,6 +426,12 @@ subhead {
   @media only screen and (max-width: 985px) {
     subhead {
       font-size: 24px; } }
+
+subhead.subhead-smaller {
+  font-size: 24px; }
+  @media only screen and (max-width: 985px) {
+    subhead.subhead-smaller {
+      font-size: 20px; } }
 
 subhead.subhead-light {
   color: #666666; }

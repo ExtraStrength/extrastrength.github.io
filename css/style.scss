@@ -20,6 +20,30 @@ body {
   height: 100%;
 }
 
+img {
+  max-width: 100%;
+}
+
+.BlockContainer {
+  margin: -10px;
+  @include layout;
+}
+
+.BlockContainer.BlockContainer--ColumnAt1024 {
+  @include mobile-and-tablet {
+    @include layout-vertical;
+  }
+}
+
+.Block {
+  margin: 10px;
+}
+
+.Block--VerticalCenter {
+  @include layout;
+  @include layout-center;
+}
+
 wrapper {
   padding: 0 10%;
   width: 100%;
@@ -53,24 +77,6 @@ header {
   @include user-select(none);
 }
 
-header video {
-  min-width: 100%;
-  min-height: 100%;
-  /*-webkit-filter: blur(2px);*/
-  z-index: 1;
-}
-
-header img {
-  min-width: 100%;
-  min-height: 100%;
-  z-index: 1;
-}
-
-header .content {
-  width: 100%;
-  padding: 0 10%;
-}
-
 header h1 {
   color: #222;
   display: inline-block;
@@ -85,6 +91,18 @@ header h1 {
   @include mobile-and-tablet {
     font-size: 100px;
   }
+
+  @include mobile-only {
+    font-size: 48px;
+    margin: 0 0 0 -1px;
+    letter-spacing: 0;
+    margin-top: 48px;
+  }
+}
+
+h1.h1-smaller {
+  font-size: 76px;
+  letter-spacing: -5px;
 
   @include mobile-only {
     font-size: 48px;
@@ -146,6 +164,14 @@ subhead {
 
   @include mobile-and-tablet {
     font-size: 24px;
+  }
+}
+
+subhead.subhead-smaller {
+  font-size: 24px;
+
+  @include mobile-and-tablet {
+    font-size: 20px;
   }
 }
 
