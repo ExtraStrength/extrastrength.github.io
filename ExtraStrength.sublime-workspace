@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"margin-",
+				"margin-top"
+			],
+			[
+				"line",
+				"line-height"
+			],
+			[
+				"marg",
+				"margin"
+			],
+			[
+				"padd",
+				"padding-right"
+			],
+			[
+				"padding",
+				"padding-left"
+			],
+			[
+				"margin",
+				"margin-right"
+			],
+			[
 				"color",
 				"color_background"
 			],
@@ -12,20 +36,12 @@
 				"background-position"
 			],
 			[
-				"padd",
-				"padding"
-			],
-			[
 				"text",
 				"text-decoration"
 			],
 			[
 				"font",
 				"font-weight"
-			],
-			[
-				"margin",
-				"margin"
 			],
 			[
 				"min",
@@ -70,10 +86,6 @@
 			[
 				"background-",
 				"background-color"
-			],
-			[
-				"margin-",
-				"margin-right"
 			],
 			[
 				"text-",
@@ -152,10 +164,6 @@
 				"st800()	 _media-queries.scss"
 			],
 			[
-				"padding",
-				"padding-bottom"
-			],
-			[
 				"remove",
 				"removeClass"
 			],
@@ -198,10 +206,6 @@
 			[
 				"remo",
 				"removeSwitcher"
-			],
-			[
-				"marg",
-				"margin"
 			],
 			[
 				"treni",
@@ -510,15 +514,59 @@
 			[
 				"COLO",
 				"color_gray_middle"
-			],
-			[
-				"color_gray",
-				"color_gray_middle"
 			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "css/style.scss",
+			"settings":
+			{
+				"buffer_size": 4670,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/_layout.scss",
+			"settings":
+			{
+				"buffer_size": 7476,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "workbench/index.html",
+			"settings":
+			{
+				"buffer_size": 5119,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 3267,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/NavBar.scss",
+			"settings":
+			{
+				"buffer_size": 866,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/Button.scss",
+			"settings":
+			{
+				"buffer_size": 1119,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -600,6 +648,9 @@
 	},
 	"file_history":
 	[
+		"/Users/brianarmstrong/Github/extrastrength.github.io/css/Button.scss",
+		"/Users/brianarmstrong/Github/extrastrength.github.io/css/_media-queries.scss",
+		"/Users/brianarmstrong/Github/extrastrength.github.io/css/NavBar.scss",
 		"/Users/brianarmstrong/Github/CanopyRails/app/assets/stylesheets/product-cards.scss",
 		"/Users/brianarmstrong/Github/CanopyRails/app/assets/stylesheets/nav-page-level.scss",
 		"/Users/brianarmstrong/Github/CanopyRails/app/assets/stylesheets/pivot-embed.scss",
@@ -724,10 +775,7 @@
 		"/Users/brianarmstrong/Github/CanopyRails/app/assets/javascripts/blog.js",
 		"/Users/brianarmstrong/Github/CanopyRails/app/assets/stylesheets/admin/admin-header.scss",
 		"/Users/brianarmstrong/Github/CanopyRails/app/assets/javascripts/cssAnimation.jquery.js",
-		"/Users/brianarmstrong/Github/CanopyRails/app/helpers/users_helper.rb",
-		"/Users/brianarmstrong/Github/CanopyRails/app/assets/javascripts/app/new-collection.js.coffee",
-		"/Users/brianarmstrong/Github/CanopyRails/app/assets/javascripts/app/collections.js.coffee",
-		"/Users/brianarmstrong/Github/CanopyRails/app/assets/javascripts/admin/newsletter-editing.js.coffee"
+		"/Users/brianarmstrong/Github/CanopyRails/app/helpers/users_helper.rb"
 	],
 	"find":
 	{
@@ -873,6 +921,14 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"button",
+			"title",
+			"dark",
+			"title",
+			"dark-section",
+			"about",
+			"dark-section",
+			"section-dark",
 			"48px ",
 			"shop our ",
 			"empty-state-headline",
@@ -992,15 +1048,7 @@
 			"trackEvent",
 			"self.look",
 			"amazonapi",
-			"amazon",
-			"variations",
-			"first",
-			"return",
-			"self.dig",
-			"dig",
-			"lookup",
-			"amazon",
-			"facebook"
+			"amazon"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1021,8 +1069,243 @@
 	"groups":
 	[
 		{
+			"selected": 3,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "css/style.scss",
+					"settings":
+					{
+						"buffer_size": 4670,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								776,
+								749
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "css/_layout.scss",
+					"settings":
+					{
+						"buffer_size": 7476,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2215,
+								2204
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1484.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "workbench/index.html",
+					"settings":
+					{
+						"buffer_size": 5119,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4410,
+								4410
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 3267,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1188,
+								1188
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 342.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "css/NavBar.scss",
+					"settings":
+					{
+						"buffer_size": 866,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								773,
+								773
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "css/Button.scss",
+					"settings":
+					{
+						"buffer_size": 1119,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								519,
+								519
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -1075,6 +1358,18 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"butt",
+				"css/Button.scss"
+			],
+			[
+				"media",
+				"css/_media-queries.scss"
+			],
+			[
+				"nav",
+				"css/NavBar.scss"
+			],
 			[
 				"product.",
 				"app/models/product.rb"
@@ -1198,10 +1493,6 @@
 			[
 				"avatar",
 				"app/views/pieces/_avatar.html.haml"
-			],
-			[
-				"nav",
-				"app/assets/stylesheets/nav.css.scss"
 			],
 			[
 				"header",
@@ -1578,14 +1869,6 @@
 			[
 				"commentnotific",
 				"app/views/users/_comment_notification.html.haml"
-			],
-			[
-				"usernotification",
-				"app/views/users/_notification.html.haml"
-			],
-			[
-				"notif",
-				"app/views/users/notifications.html.haml"
 			]
 		],
 		"width": 0.0
