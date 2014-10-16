@@ -113,16 +113,24 @@ subhead {
 
 .dark-section.about {
   background-color: #222;
+
+}
+
+section {
   padding: 10% 0;
 }
 
 title {
-  color: rgba(100%, 100%, 100%, .2);
+  color: hsla(0, 0%, 0%, .25);
   text-transform: uppercase;
   display: block;
   font-size: 20px;
   letter-spacing: 3px;
   margin-bottom: 64px;
+}
+
+.dark-section title {
+  color: hsla(0, 0%, 100%, .2);
 }
 
 p {
