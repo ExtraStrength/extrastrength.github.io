@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "graphik";
+  height: 100%;
+}
+
+wrapper {
+  padding: 0 10%;
+  width: 100%;
+  display: block;
+}
+
+header {
+  width: 100%;
+  background-color: #132144;
+  background-image: url(video/ScubaVideo.poster.progressive.jpg);
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+header video {
+  min-width: 100%;
+  min-height: 100%;
+  /*-webkit-filter: blur(2px);*/
+  z-index: 1;
+}
+
+header img {
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 1;
+}
+
+header .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -ms-flex-direction: row;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+
+}
+
+header .content {
+  width: 100%;
+  padding: 0 10%;
+}
+
+header h1 {
+  color: white;
+  /*text-transform: uppercase;*/
+  font-weight: 500;
+  font-size: 124px;
+  line-height: 124px;
+  letter-spacing: -6px;
+  margin: 0;
+  padding: 0;
+}
+
+header h1 span {
+  font-size: 100px;
+  padding: 0 8px 0 12px;
+}
+
+header .rule {
+  height: 6px;
+  background-color: white;
+  margin: 16px 0 18px;
+  max-width: 648px;
+}
+
+header subhead {
+  /*color: hsl(221, 51%, 92%);*/
+  color: white;
+  opacity: 1;
+  font-size: 28px;
+  line-height: 1.2;
+  display: block;
+  width: 100%;
+  margin: 0;
+  font-weight: 400;
+}
+
+header .copy {
+  max-width: 600px;
+  margin-top: 40px;
+}
+
+header p {
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+header p > a {
+  color: white;
+  background-image: linear-gradient(to bottom, hsla(0, 0%, 100%, 0) 50%, hsla(0, 0%, 100%, .8) 50%);
+  text-decoration: none;
+  background-size: 2px 2px;
+  background-repeat: repeat-x;
+  background-position: center bottom;
+  display: inline-block;
+}
+
+header .credit {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 8px 12px;
+  color: white;
+  opacity: .5;
+  font-size: 12px;
+  z-index: 3;
+}
+
+header .credit a {
+  color: white;
+}
+
+menu {
+  padding: 0;
+}
+
+menu > a {
+  padding: 12px 48px 12px 0;
+  font-size: 36px;
+  text-decoration: none;
+  color: hsl(0, 0%, 80%);
+  font-weight: 500;
+  transition: all .2s;
+}
+
+menu > a:hover {
+  color: hsl(0, 0%, 30%);
+  transform: translateY(-2px);
+}
+
+menu > a.active {
+
+}
