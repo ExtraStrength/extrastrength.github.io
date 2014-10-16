@@ -1,0 +1,63 @@
+.NavBar {
+  background-color: black;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  font-size: 16px;
+
+  @include mobile-only {
+    font-size: 14px;
+  }
+}
+
+.NavBar a {
+  text-decoration: none;
+}
+
+.NavBar--HomePage {
+  position: absolute;
+  background-color: white;
+  margin-left: -10px;
+}
+
+nav,
+.NavBar-Logo,
+.NavBar-Link {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+.NavBar-Link {
+  color: white;
+  font-weight: 300;
+  padding: 20px 10px 24px;
+  display: inline-block;
+  opacity: .75;
+
+  @include mobile-only {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+}
+
+.NavBar-Link--active {
+  font-weight: 500;
+  opacity: 1;
+}
+
+.NavBar-Logo {
+  color: white;
+  font-weight: 500;
+  opacity: 1;
+  margin-right: 40px;
+
+  @include mobile-only {
+    margin-right: 18px;
+  }
+}
+
+.NavBar--HomePage .NavBar-Link,
+.NavBar--HomePage .NavBar-Logo {
+  color: #222;
+}

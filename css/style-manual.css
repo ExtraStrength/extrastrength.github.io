@@ -1,15 +1,8 @@
-@import "_layout";
-@import "_media-queries";
-@import "_mixins";
-
 * {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-@import "NavBar";
-@import "Button";
 
 html {
   height: 100%;
@@ -24,23 +17,109 @@ wrapper {
   padding: 0 10%;
   width: 100%;
   display: block;
-  max-width: 1400px;
-  margin: 0 auto;
 }
 
-.disclaimer {
-  font-size: 14px;
-  color: #999;
+/* COMPONENTS */
+
+.ButtonContainer {
+  font-size: 0;
+}
+
+.ButtonContainer > div {
+  font-size: 1rem;
+}
+
+.Button {
+  padding: 10px 20px 12px;
+  background-color: hsl(199, 100%, 42%);
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+  display: inline-block;
+  border-radius: 3px;
+  margin-right: 6px;
+  transition: background-color .2s, color .2s;
+}
+
+.Button:hover {
+  background-color: hsl(199, 100%, 30%);
+}
+
+.Button--Large {
+  padding: 18px 30px 20px;
+  font-size: 20px;
+  margin-right: 12px;
+}
+
+.Button--Stroked {
+  background-color: transparent;
+  box-shadow: inset 0 0 0 1px hsl(199, 100%, 42%);
+  color: hsl(199, 100%, 42%);
+}
+
+.Button--Stroked:hover {
+  background-color: hsl(199, 100%, 30%);
+  box-shadow: inset 0 0 0 1px hsl(199, 100%, 30%);;
+  color: white;
 }
 
 .download-workbench-container {
   margin: 30px 0;
 }
 
-.download-workbench-container .Button {
-  margin-top: 4px;
-  margin-bottom: 4px;
+/* NAVBAR */
+
+.NavBar {
+  background-color: black;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
 }
+
+.NavBar a {
+  text-decoration: none;
+}
+
+.NavBar--HomePage {
+  position: absolute;
+  background-color: white;
+  margin-left: -10px;
+}
+
+nav,
+.NavBar-Logo,
+.NavBar-Link {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+.NavBar-Link {
+  color: white;
+  font-weight: 300;
+  padding: 20px 10px 24px;
+  display: inline-block;
+  opacity: .75;
+}
+
+.NavBar-Link--active {
+  font-weight: 500;
+  opacity: 1;
+}
+
+.NavBar-Logo {
+  color: white;
+  font-weight: 500;
+  opacity: 1;
+  margin-right: 40px;
+}
+
+.NavBar--HomePage .NavBar-Link,
+.NavBar--HomePage .NavBar-Logo {
+  color: #222;
+}
+
+/* END NAVBAR */
 
 /* HEADER */
 
@@ -50,7 +129,11 @@ header {
   position: relative;
   overflow: hidden;
   padding: 18% 0;
-  @include user-select(none);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+       -o-user-select: none;
+          user-select: none;
 }
 
 header video {
@@ -81,24 +164,12 @@ header h1 {
   margin: 0 0 0 -10px;
   padding: 0 0 36px;
   transition: all .2s;
-
-  @include mobile-and-tablet {
-    font-size: 100px;
-  }
-
-  @include mobile-only {
-    font-size: 48px;
-    margin: 0 0 0 -1px;
-    letter-spacing: 0;
-    margin-top: 48px;
-  }
 }
 
 header h1.colorful {
-  color: #70B125;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-image: -webkit-linear-gradient(left,
+  background-image: linear-gradient(90deg,
     #00529E 0%,
     #00529E 9%,
 
@@ -130,7 +201,14 @@ header h1.colorful {
     #ED641A 90%,
 
     #EA401A 90%,
-    #EA401A 100%);
+    #EA401A 100%);;
+}
+
+@media only screen and (max-width: 600px) {
+  header h1 {
+    font-size: 48px;
+    letter-spacing: 0;
+  }
 }
 
 subhead {
@@ -142,11 +220,6 @@ subhead {
   width: 100%;
   margin: 0;
   font-weight: 400;
-  transition: font-size .2s;
-
-  @include mobile-and-tablet {
-    font-size: 24px;
-  }
 }
 
 subhead.subhead-light {
@@ -159,74 +232,25 @@ subhead.subhead-light {
 
 /* BODY */
 
+.dark-section.about {
+  background-color: #222;
+}
+
+section.toolbelt {
+  background-color: #1793D7;
+}
+
 section {
   padding: 10% 0;
 }
 
-.Section--Black {
-  background-color: #222;
-}
-
-.Section--Blue {
-  background-color: #1793D7;
-}
-
-.Section--Red {
-  background-color: #EA401A;
-}
-
 title {
-  color: hsla(0, 0%, 0%, .3);
+  color: hsla(0, 0%, 0%, .25);
   text-transform: uppercase;
   display: block;
-  font-size: 19px;
+  font-size: 20px;
   letter-spacing: 3px;
   margin-bottom: 64px;
-
-  @include mobile-and-small-tablet {
-    font-size: 16px;
-    margin-top: 20px;
-    margin-bottom: 36px;
-  }
-}
-
-.Section--LightText title {
-  color: hsla(0, 0%, 100%, .7);
-}
-
-p {
-  color: #999;
-  font-size: 28px;
-  font-weight: 400;
-  line-height: 1.6;
-  transition: font-size .2s;
-
-  @include mobile-and-small-tablet {
-    font-size: 24px;
-  }
-
-  @include mobile-only {
-    font-size: 20px;
-  }
-}
-
-p > a {
-  color: #222;
-  background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0) 50%, hsla(0, 0%, 0%, .8) 50%);
-  text-decoration: none;
-  background-size: 2px 2px;
-  background-repeat: repeat-x;
-  background-position: center bottom;
-  display: inline-block;
-}
-
-.Section--LightText p {
-  color: hsla(0, 0%, 100%, .8);
-}
-
-.Section--LightText p > a {
-  color: white;
-  background-image: linear-gradient(to bottom, hsla(0, 0%, 100%, 0) 50%, hsla(0, 0%, 100%, .8) 50%);
 }
 
 .ScrollIndicator {
@@ -250,32 +274,43 @@ h3 {
   margin: 0;
 }
 
-.Features {
-  @include layout;
-  margin: -30px;
-
-  @include mobile-and-tablet {
-    @include layout-vertical;
-  }
-}
-
 .Feature {
-  margin: 30px 30px 60px;
-  @include layout-flex;
-
-  @include mobile-and-tablet {
-    margin-bottom: 30px;
-  }
+  margin: 0 0 40px;
 }
 
 .Feature p {
   font-size: 22px;
   margin: .2em 0;
+}
 
-  @include mobile-only {
-    font-size: 20px;
-    line-height: 1.6;
-  }
+.dark-section title {
+  color: hsla(0, 0%, 100%, .5);
+}
+
+p {
+  color: #999;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+p > a {
+  color: #222;
+  background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0) 50%, hsla(0, 0%, 0%, .8) 50%);
+  text-decoration: none;
+  background-size: 2px 2px;
+  background-repeat: repeat-x;
+  background-position: center bottom;
+  display: inline-block;
+}
+
+.dark-section p {
+  color: hsla(0, 0%, 100%, .75);
+}
+
+.dark-section p > a {
+  color: white;
+  background-image: linear-gradient(to bottom, hsla(0, 0%, 100%, 0) 50%, hsla(0, 0%, 100%, .8) 50%);
 }
 
 .rainbow {
@@ -315,8 +350,4 @@ h3 {
 
     #EA401A 90%,
     #EA401A 100%);
-
-  @include mobile-only {
-    height: 100px;
-  }
 }

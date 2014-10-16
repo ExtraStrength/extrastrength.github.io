@@ -1,0 +1,242 @@
+$transition_standard: 0.2s all ease-in-out;
+$transition_timing: 0.2s ease-in-out;
+$transition_timing_long: 0.5s ease-in-out;
+
+@mixin asset($width, $height, $onex, $twox) {
+  @include background-image-uri($onex, $twox);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: $height;
+  width: $width;
+}
+
+@mixin appearance($argument) {
+  -webkit-appearance: $argument;
+     -moz-appearance: $argument;
+      -ms-appearance: $argument;
+       -o-appearance: $argument;
+}
+
+@mixin backface-visibility($argument) {
+  -webkit-backface-visibility: $argument;
+  -moz-backface-visibility: $argument;
+  -ms-backface-visibility: $argument;
+  -o-backface-visibility: $argument;
+  backface-visibility: $argument;
+}
+
+@mixin background-size($argument) {
+  -webkit-background-size: $argument;
+  -moz-background-size: $argument;
+  -ms-background-size: $argument;
+  -o-background-size: $argument;
+  background-size: $argument;
+}
+
+@mixin box-sizing($argument) {
+  -webkit-box-sizing: $argument;
+  -moz-box-sizing: $argument;
+  -ms-box-sizing: $argument;
+  -o-box-sizing: $argument;
+  box-sizing: $argument;
+}
+
+@mixin column-count($argument) {
+  -webkit-column-count: $argument;
+  -moz-column-count: $argument;
+  column-count: $argument;
+}
+
+@mixin column-gap($argument) {
+  -webkit-column-gap: $argument;
+  -moz-column-gap: $argument;
+  column-gap: $argument;
+}
+
+@mixin display-flex() {
+  display: -webkit-box;     // OLD: Safari,  iOS, Android browser, older WebKit browsers.
+  display:    -moz-box;     // OLD: FF, buggy
+  display:     -ms-flexbox; // MID: IE 10
+  display: -webkit-flex;    // NEW: Chrome 21–28, Safari 6.1+
+  display:      -o-flex;
+  display:         flex;    // NEW: IE11, Chrome 29+, Opera 12.1+, Firefox 22+
+}
+
+@mixin flex-flow($arguments) {
+  -webkit-flex-flow: $arguments;
+     -moz-flex-flow: $arguments;
+      -ms-flex-flow: $arguments;
+       -o-flex-flow: $arguments;
+          flex-flow: $arguments;
+}
+
+@mixin flex($arguments) {
+  -webkit-flex: $arguments;
+     -moz-flex: $arguments;
+      -ms-flex: $arguments;
+       -o-flex: $arguments;
+          flex: $arguments;
+}
+
+@mixin flex-grow($arguments) {
+  -webkit-flex-grow: $arguments;
+     -moz-flex-grow: $arguments;
+      -ms-flex-grow: $arguments;
+       -o-flex-grow: $arguments;
+          flex-grow: $arguments;
+}
+
+
+@mixin align-items($argument) {
+  -webkit-flex-align: $argument;
+      -ms-flex-align: $argument;
+   -webkit-box-align: $argument;
+      -moz-box-align: $argument;
+           box-align: $argument;
+ -webkit-align-items: $argument;
+         align-items: $argument;
+}
+
+@mixin align-self($argument) {
+  -webkit-align-self: $argument;
+          align-self: $argument;
+}
+
+@mixin justify-content($argument) {
+  -webkit-justify-content: $argument;
+  -moz-justify-content: $argument;
+  -ms-justify-content: $argument;
+  justify-content: $argument;
+}
+
+@mixin gradient($startSide, $start, $end) {
+  background-image: -webkit-linear-gradient($startSide, $start, $end);
+  background-image: -moz-linear-gradient($startSide, $start, $end);
+  background-image: -ms-linear-gradient($startSide, $start, $end);
+  background-image: -o-linear-gradient($startSide, $start, $end);
+  background-image: linear-gradient($startSide, $start, $end);
+}
+
+@mixin font-weight($weight) {
+  @if $weight == 200 {
+    font-weight: 300;
+    -moz-osx-font-smoothing: grayscale;
+     -webkit-font-smoothing: antialiased;
+  }
+
+  @if $weight == 300 {
+    font-weight: 300;
+    -moz-osx-font-smoothing: initial;
+     -webkit-font-smoothing: subpixel-antialiased;
+  }
+
+  @if $weight == 400 {
+    font-weight: 500;
+    -moz-osx-font-smoothing: grayscale;
+     -webkit-font-smoothing: antialiased;
+  }
+
+  @if $weight == 500 {
+    font-weight: 500;
+    -moz-osx-font-smoothing: initial;
+     -webkit-font-smoothing: subpixel-antialiased;
+  }
+
+  @if $weight == 700 {
+    font-weight: 700;
+    -moz-osx-font-smoothing: initial;
+     -webkit-font-smoothing: subpixel-antialiased;
+  }
+}
+
+@mixin medium-underline($color, $background-size:"") {
+  @if $background-size == "" {
+    $background-size: 2px;
+  }
+
+  background-size: $background-size $background-size;
+  background-image: -webkit-linear-gradient(to bottom,transparent 50%, $color 50%);
+  background-image: -moz-linear-gradient(to bottom,transparent 50%, $color 50%);
+  background-image: -ms-linear-gradient(to bottom,transparent 50%, $color 50%);
+  background-image: -o-linear-gradient(to bottom,transparent 50%, $color 50%);
+  background-image: linear-gradient(to bottom,transparent 50%, $color 50%);
+  background-repeat: repeat-x;
+  background-position: center bottom;
+  text-decoration: none;
+}
+
+@mixin placeholder() {
+  ::-webkit-input-placeholder {
+    @content;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    @content;
+  }
+  ::-moz-placeholder {  /* Firefox 19+ */
+    @content;
+  }
+  :-ms-input-placeholder {
+    @content;
+  }
+}
+
+@mixin transition($arguments...) {
+  -webkit-transition: $arguments;
+     -moz-transition: $arguments;
+      -ms-transition: $arguments;
+       -o-transition: $arguments;
+          transition: $arguments;
+}
+
+@mixin transform($arguments...) {
+  -webkit-transform: $arguments;
+     -moz-transform: $arguments;
+      -ms-transform: $arguments;
+       -o-transform: $arguments;
+          transform: $arguments;
+}
+
+@mixin user-select($argument) {
+  -webkit-user-select: $argument;
+     -moz-user-select: $argument;
+      -ms-user-select: $argument;
+       -o-user-select: $argument;
+          user-select: $argument;
+}
+
+
+// BACKGROUND IMAGES ///////////////////////////////////////////////////////////
+
+// TODO(brian): Try this
+// filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+// -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+
+
+@mixin background-image-1x($onex) {
+  // Just 1x asset, with link and data URI
+  background-image: url($onex);
+  background-image: asset_data_url($onex);
+}
+
+// @mixin background-image($onex, $twox, $threex:"") {
+//   // Fallback for no image-set
+//   background-image: url($onex);
+//   background-image: asset_data_url($onex);
+
+//   // Image-set, but no URI
+//   // NOT YET SUPPORTED: background-image:    -moz-image-set(url($onex) 1x, url($twox) 2x, #{url($threex) 3x});
+//   background-image: -webkit-image-set(url($onex) 1x, url($twox) 2x, #{url($threex) 3x});
+//   // NOT YET SUPPORTED: background-image:         image-set(url($onex) 1x, url($twox) 2x, #{url($threex) 3x});
+// }
+
+@mixin background-image-uri($onex, $twox) {
+  // Fallback for no image-set
+  background-image: url($onex);
+  background-image: asset_data_url($onex);
+
+  // Ideal case, image-set + URI
+  // NOT YET SUPPORTED: background-image:    -moz-image-set(asset_data_url($onex) 1x, asset_data_url($twox) 2x);
+  background-image: -webkit-image-set(asset_data_url($onex) 1x, asset_data_url($twox) 2x);
+  // NOT YET SUPPORTED: background-image:         image-set(asset_data_url($onex) 1x, asset_data_url($twox) 2x);
+}

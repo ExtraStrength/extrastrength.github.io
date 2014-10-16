@@ -1,0 +1,62 @@
+$color_focus: hsla(199, 100%, 60%, .3);
+
+.ButtonContainer {
+  font-size: 0;
+}
+
+.ButtonContainer > div {
+  font-size: 1rem;
+}
+
+.Button {
+  padding: 10px 20px 12px;
+  background-color: hsl(199, 100%, 42%);
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  font-weight: 300;
+  display: inline-block;
+  border-radius: 3px;
+  margin-right: 6px;
+  transition: background-color .2s, color .2s;
+  @include user-select(none);
+
+  &:hover {
+    background-color: hsl(199, 100%, 30%);
+  }
+
+  &:focus {
+    outline: 4px solid $color_focus;
+    box-shadow: 0 0 0 4px $color_focus;
+  }
+}
+
+.Button--Large {
+  padding: 18px 30px 20px;
+  font-size: 20px;
+  margin-right: 12px;
+
+  @include mobile-only {
+    width: 100%;
+  }
+}
+
+.Button--DarkBlue {
+  background-color: hsl(199, 100%, 30%);
+
+  &:hover {
+    background-color: hsl(199, 100%, 20%);
+  }
+}
+
+.Button--Stroked {
+  background-color: transparent;
+  box-shadow: inset 0 0 0 1px hsl(199, 100%, 42%);
+  color: hsl(199, 100%, 42%);
+}
+
+.Button--Stroked:hover {
+  background-color: hsl(199, 100%, 30%);
+  box-shadow: inset 0 0 0 1px hsl(199, 100%, 30%);;
+  color: white;
+}
