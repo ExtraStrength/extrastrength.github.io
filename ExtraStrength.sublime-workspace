@@ -536,22 +536,6 @@
 			}
 		},
 		{
-			"file": "workbench/index.html",
-			"settings":
-			{
-				"buffer_size": 5119,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "index.html",
-			"settings":
-			{
-				"buffer_size": 3267,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "css/NavBar.scss",
 			"settings":
 			{
@@ -648,6 +632,8 @@
 	},
 	"file_history":
 	[
+		"/Users/brianarmstrong/Github/extrastrength.github.io/workbench/index.html",
+		"/Users/brianarmstrong/Github/extrastrength.github.io/index.html",
 		"/Users/brianarmstrong/Github/extrastrength.github.io/css/Button.scss",
 		"/Users/brianarmstrong/Github/extrastrength.github.io/css/_media-queries.scss",
 		"/Users/brianarmstrong/Github/extrastrength.github.io/css/NavBar.scss",
@@ -773,9 +759,7 @@
 		"/Users/brianarmstrong/Github/CanopyRails/app/models/feature.rb",
 		"/Users/brianarmstrong/Github/CanopyRails/lib/tasks/fetch_availability.rake",
 		"/Users/brianarmstrong/Github/CanopyRails/app/assets/javascripts/blog.js",
-		"/Users/brianarmstrong/Github/CanopyRails/app/assets/stylesheets/admin/admin-header.scss",
-		"/Users/brianarmstrong/Github/CanopyRails/app/assets/javascripts/cssAnimation.jquery.js",
-		"/Users/brianarmstrong/Github/CanopyRails/app/helpers/users_helper.rb"
+		"/Users/brianarmstrong/Github/CanopyRails/app/assets/stylesheets/admin/admin-header.scss"
 	],
 	"find":
 	{
@@ -1069,7 +1053,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -1094,6 +1078,10 @@
 							[
 								{
 									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
 									"selector": "text.html"
 								},
 								{
@@ -1138,48 +1126,13 @@
 								{
 									"characters": ".#",
 									"selector": "text.html"
-								}
-							],
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1484.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "workbench/index.html",
-					"settings":
-					{
-						"buffer_size": 5119,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4410,
-								4410
-							]
-						],
-						"settings":
-						{
-							"auto_complete_triggers":
-							[
-								{
-									"characters": "<",
-									"selector": "text.html"
 								},
 								{
 									"characters": ".#",
 									"selector": "text.html"
 								}
 							],
-							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
@@ -1190,46 +1143,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "index.html",
-					"settings":
-					{
-						"buffer_size": 3267,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1188,
-								1188
-							]
-						],
-						"settings":
-						{
-							"auto_complete_triggers":
-							[
-								{
-									"characters": "<",
-									"selector": "text.html"
-								},
-								{
-									"characters": ".#",
-									"selector": "text.html"
-								}
-							],
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 342.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
+					"buffer": 2,
 					"file": "css/NavBar.scss",
 					"settings":
 					{
@@ -1255,6 +1169,10 @@
 								{
 									"characters": ".#",
 									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
 								}
 							],
 							"syntax": "Packages/SCSS/SCSS.tmLanguage",
@@ -1268,7 +1186,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 3,
 					"file": "css/Button.scss",
 					"settings":
 					{
@@ -1289,6 +1207,10 @@
 							[
 								{
 									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
 									"selector": "text.html"
 								},
 								{
