@@ -155,13 +155,80 @@ p > a {
   }
 }
 
-.rainbow {
+.new-rainbow {
   width: 100%;
   height: 400px;
   display: block;
-  background-image: linear-gradient(90deg, $rainbow_stepped);
+
+  @include layout;
 
   @include mobile-only {
     height: 100px;
   }
+  cursor: default;
+  @include user-select(none);
 }
+
+.RainbowStripe {
+  height: 100%;
+  width: 20px;
+  @include layout-flex;
+  position: relative;
+  transition: all .2s ease-out;
+}
+
+// .RainbowStripe:hover {
+//   -ms-flex: 1.3;
+//   -webkit-flex: 1.3;
+//   flex: 1.3;
+// }
+
+.RainbowStripe:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: white;
+  opacity: 0;
+  transition: opacity .2s;
+}
+
+.RainbowStripe:hover:after {
+  opacity: .2;
+  -webkit-background-blend-mode: overlay;
+}
+
+.RainbowStripe--Blue {
+  background-color: $color_blue;
+}
+.RainbowStripe--BlueLight {
+  background-color: $color_blue_light;
+}
+.RainbowStripe--Green {
+  background-color: $color_green;
+}
+.RainbowStripe--GreenLight {
+  background-color: $color_green_light;
+}
+.RainbowStripe--YellowGreen {
+  background-color: $color_yellow_green;
+}
+.RainbowStripe--Yellow {
+  background-color: $color_yellow;
+}
+.RainbowStripe--YellowOrange {
+  background-color: $color_yellow_orange;
+}
+.RainbowStripe--OrangeLight {
+  background-color: $color_orange_light;
+}
+.RainbowStripe--Orange {
+  background-color: $color_orange;
+}
+.RainbowStripe--RedOrange {
+  background-color: $color_red_orange;
+}
+.RainbowStripe--Red {
+  background-color: $color_red;
+}
+

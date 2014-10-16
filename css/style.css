@@ -560,11 +560,74 @@ p > a {
       font-size: 20px;
       line-height: 1.6; } }
 
-.rainbow {
+.new-rainbow {
   width: 100%;
   height: 400px;
   display: block;
-  background-image: linear-gradient(90deg, #00529e 0%, #00529e 9%, #0093d7 9%, #0093d7 18%, #00833f 18%, #00833f 27%, #70b125 27%, #70b125 36%, #d5dc07 36%, #d5dc07 45%, #ede500 45%, #ede500 54%, #f2d201 54%, #f2d201 63%, #f8bc08 63%, #f8bc08 72%, #f5921a 72%, #f5921a 81%, #ed641a 81%, #ed641a 90%, #ea401a 90%, #ea401a 100%); }
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none; }
   @media only screen and (max-width: 540px) {
-    .rainbow {
+    .new-rainbow {
       height: 100px; } }
+
+.RainbowStripe {
+  height: 100%;
+  width: 20px;
+  -ms-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  position: relative;
+  transition: all .2s ease-out; }
+
+.RainbowStripe:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: white;
+  opacity: 0;
+  transition: opacity .2s; }
+
+.RainbowStripe:hover:after {
+  opacity: .2;
+  -webkit-background-blend-mode: overlay; }
+
+.RainbowStripe--Blue {
+  background-color: #00529e; }
+
+.RainbowStripe--BlueLight {
+  background-color: #0093d7; }
+
+.RainbowStripe--Green {
+  background-color: #00833f; }
+
+.RainbowStripe--GreenLight {
+  background-color: #70b125; }
+
+.RainbowStripe--YellowGreen {
+  background-color: #d5dc07; }
+
+.RainbowStripe--Yellow {
+  background-color: #ede500; }
+
+.RainbowStripe--YellowOrange {
+  background-color: #f2d201; }
+
+.RainbowStripe--OrangeLight {
+  background-color: #f8bc08; }
+
+.RainbowStripe--Orange {
+  background-color: #f5921a; }
+
+.RainbowStripe--RedOrange {
+  background-color: #ed641a; }
+
+.RainbowStripe--Red {
+  background-color: #ea401a; }
