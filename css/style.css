@@ -367,10 +367,7 @@ h1.h1-smaller {
       margin-top: 24px; } }
 
 header h1.colorful {
-  color: #70b125;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-image: -webkit-linear-gradient(left, #00529e 0%, #00529e 9%, #0093d7 9%, #0093d7 18%, #00833f 18%, #00833f 27%, #70b125 27%, #70b125 36%, #d5dc07 36%, #d5dc07 45%, #ede500 45%, #ede500 54%, #f2d201 54%, #f2d201 63%, #f8bc08 63%, #f8bc08 72%, #f5921a 72%, #f5921a 81%, #ed641a 81%, #ed641a 90%, #ea401a 90%, #ea401a 100%); }
+  color: #0093d7; }
 
 subhead {
   color: #222;
