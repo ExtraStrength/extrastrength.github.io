@@ -1,10 +1,17 @@
 @import "_layout";
+@import "_media-queries";
+@import "_mixins";
+@import "_colors";
 
 * {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+@import "NavBar";
+@import "Button";
+@import "Header";
 
 html {
   height: 100%;
@@ -15,244 +22,95 @@ body {
   height: 100%;
 }
 
+h3 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #222;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
 wrapper {
   padding: 0 10%;
   width: 100%;
   display: block;
+  max-width: 1400px;
+  margin: 0 auto;
 }
-
-/* COMPONENTS */
-
-.ButtonContainer {
-  font-size: 0;
-}
-
-.ButtonContainer > div {
-  font-size: 1rem;
-}
-
-.Button {
-  padding: 10px 20px 12px;
-  background-color: hsl(199, 100%, 42%);
-  text-decoration: none;
-  color: white;
-  font-weight: 300;
-  display: inline-block;
-  border-radius: 3px;
-  margin-right: 6px;
-  transition: background-color .2s, color .2s;
-}
-
-.Button:hover {
-  background-color: hsl(199, 100%, 30%);
-}
-
-.Button--Large {
-  padding: 18px 30px 20px;
-  font-size: 20px;
-  margin-right: 12px;
-}
-
-.Button--Stroked {
-  background-color: transparent;
-  box-shadow: inset 0 0 0 1px hsl(199, 100%, 42%);
-  color: hsl(199, 100%, 42%);
-}
-
-.Button--Stroked:hover {
-  background-color: hsl(199, 100%, 30%);
-  box-shadow: inset 0 0 0 1px hsl(199, 100%, 30%);;
-  color: white;
-}
-
-.download-workbench-container {
-  margin: 30px 0;
-}
-
-/* NAVBAR */
-
-.NavBar {
-  background-color: black;
-  position: fixed;
-  z-index: 1;
-  width: 100%;
-}
-
-.NavBar a {
-  text-decoration: none;
-}
-
-.NavBar--HomePage {
-  position: absolute;
-  background-color: white;
-  margin-left: -10px;
-}
-
-nav,
-.NavBar-Logo,
-.NavBar-Link {
-  display: inline-block;
-  padding: 0;
-  margin: 0;
-}
-
-.NavBar-Link {
-  color: white;
-  font-weight: 300;
-  padding: 20px 10px 24px;
-  display: inline-block;
-  opacity: .75;
-}
-
-.NavBar-Link--active {
-  font-weight: 500;
-  opacity: 1;
-}
-
-.NavBar-Logo {
-  color: white;
-  font-weight: 500;
-  opacity: 1;
-  margin-right: 40px;
-}
-
-.NavBar--HomePage .NavBar-Link,
-.NavBar--HomePage .NavBar-Logo {
-  color: #222;
-}
-
-/* END NAVBAR */
-
-/* HEADER */
-
-header {
-  width: 100%;
-  background-color: white;
-  position: relative;
-  overflow: hidden;
-  padding: 18% 0;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-       -o-user-select: none;
-          user-select: none;
-}
-
-header video {
-  min-width: 100%;
-  min-height: 100%;
-  /*-webkit-filter: blur(2px);*/
-  z-index: 1;
-}
-
-header img {
-  min-width: 100%;
-  min-height: 100%;
-  z-index: 1;
-}
-
-header .content {
-  width: 100%;
-  padding: 0 10%;
-}
-
-header h1 {
-  color: #222;
-  display: inline-block;
-  font-weight: 500;
-  font-size: 124px;
-  line-height: 1em;
-  letter-spacing: -6px;
-  margin: 0 0 0 -10px;
-  padding: 0 0 36px;
-  transition: all .2s;
-}
-
-header h1.colorful {
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-image: linear-gradient(90deg,
-    #00529E 0%,
-    #00529E 9%,
-
-    #0093D7 9%,
-    #0093D7 18%,
-
-    #00833F 18%,
-    #00833F 27%,
-
-    #70B125 27%,
-    #70B125 36%,
-
-    #D5DC07 36%,
-    #D5DC07 45%,
-
-    #EDE500 45%,
-    #EDE500 54%,
-
-    #F2D201 54%,
-    #F2D201 63%,
-
-    #F8BC08 63%,
-    #F8BC08 72%,
-
-    #F5921A 72%,
-    #F5921A 81%,
-
-    #ED641A 81%,
-    #ED641A 90%,
-
-    #EA401A 90%,
-    #EA401A 100%);;
-}
-
-@media only screen and (max-width: 600px) {
-  header h1 {
-    font-size: 48px;
-    letter-spacing: 0;
-  }
-}
-
-subhead {
-  color: #222;
-  opacity: 1;
-  font-size: 28px;
-  line-height: 1.4;
-  display: block;
-  width: 100%;
-  margin: 0;
-  font-weight: 400;
-}
-
-subhead.subhead-light {
-  color: hsl(0,0%,40%);
-}
-
-
-/* END HEADER */
-
 
 /* BODY */
-
-.dark-section.about {
-  background-color: #222;
-}
-
-section.toolbelt {
-  background-color: #1793D7;
-}
 
 section {
   padding: 10% 0;
 }
 
+.Section--Black {
+  background-color: #222;
+}
+
+.Section--Blue {
+  background-color: #1793D7;
+}
+
+.Section--Red {
+  background-color: $color_red;
+}
+
 title {
-  color: hsla(0, 0%, 0%, .25);
+  color: hsla(0, 0%, 0%, .3);
   text-transform: uppercase;
   display: block;
-  font-size: 20px;
+  font-size: 19px;
   letter-spacing: 3px;
   margin-bottom: 64px;
+
+  @include mobile-and-small-tablet {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 36px;
+  }
+}
+
+.Section--LightText title {
+  color: hsla(0, 0%, 100%, .7);
+}
+
+p {
+  color: #999;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.6;
+  transition: font-size .2s;
+
+  @include mobile-and-small-tablet {
+    font-size: 24px;
+  }
+
+  @include mobile-only {
+    font-size: 20px;
+  }
+}
+
+p > a {
+  color: #222;
+  background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0) 50%, hsla(0, 0%, 0%, .8) 50%);
+  text-decoration: none;
+  background-size: 2px 2px;
+  background-repeat: repeat-x;
+  background-position: center bottom;
+  display: inline-block;
+}
+
+.Section--LightText p {
+  color: hsla(0, 0%, 100%, .8);
+}
+
+.Section--LightText p > a {
+  color: white;
+  background-image: linear-gradient(to bottom, hsla(0, 0%, 100%, 0) 50%, hsla(0, 0%, 100%, .8) 50%);
 }
 
 .ScrollIndicator {
@@ -269,87 +127,108 @@ title {
   letter-spacing: 3px;
 }
 
-h3 {
-  font-size: 24px;
-  font-weight: 500;
-  color: #222;
-  margin: 0;
+.Features {
+  @include layout;
+  margin: -30px;
+
+  @include mobile-and-tablet {
+    @include layout-vertical;
+  }
 }
 
 .Feature {
-  margin: 0 0 40px;
+  margin: 30px 30px 60px;
+  @include layout-flex;
+
+  @include mobile-and-tablet {
+    margin-bottom: 30px;
+  }
 }
 
 .Feature p {
   font-size: 22px;
   margin: .2em 0;
+
+  @include mobile-only {
+    font-size: 20px;
+    line-height: 1.6;
+  }
 }
 
-.dark-section title {
-  color: hsla(0, 0%, 100%, .5);
-}
-
-p {
-  color: #999;
-  font-size: 28px;
-  font-weight: 400;
-  line-height: 1.6;
-}
-
-p > a {
-  color: #222;
-  background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0) 50%, hsla(0, 0%, 0%, .8) 50%);
-  text-decoration: none;
-  background-size: 2px 2px;
-  background-repeat: repeat-x;
-  background-position: center bottom;
-  display: inline-block;
-}
-
-.dark-section p {
-  color: hsla(0, 0%, 100%, .75);
-}
-
-.dark-section p > a {
-  color: white;
-  background-image: linear-gradient(to bottom, hsla(0, 0%, 100%, 0) 50%, hsla(0, 0%, 100%, .8) 50%);
-}
-
-.rainbow {
+.new-rainbow {
   width: 100%;
   height: 400px;
   display: block;
-  background-image: linear-gradient(90deg,
-    #00529E 0%,
-    #00529E 9%,
 
-    #0093D7 9%,
-    #0093D7 18%,
+  @include layout;
 
-    #00833F 18%,
-    #00833F 27%,
-
-    #70B125 27%,
-    #70B125 36%,
-
-    #D5DC07 36%,
-    #D5DC07 45%,
-
-    #EDE500 45%,
-    #EDE500 54%,
-
-    #F2D201 54%,
-    #F2D201 63%,
-
-    #F8BC08 63%,
-    #F8BC08 72%,
-
-    #F5921A 72%,
-    #F5921A 81%,
-
-    #ED641A 81%,
-    #ED641A 90%,
-
-    #EA401A 90%,
-    #EA401A 100%);
+  @include mobile-only {
+    height: 100px;
+  }
+  cursor: default;
+  @include user-select(none);
 }
+
+.RainbowStripe {
+  height: 100%;
+  width: 20px;
+  @include layout-flex;
+  position: relative;
+  transition: all .2s ease-out;
+}
+
+// .RainbowStripe:hover {
+//   -ms-flex: 1.3;
+//   -webkit-flex: 1.3;
+//   flex: 1.3;
+// }
+
+.RainbowStripe:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: white;
+  opacity: 0;
+  transition: opacity .2s;
+}
+
+.RainbowStripe:hover:after {
+  opacity: .2;
+  -webkit-background-blend-mode: overlay;
+}
+
+.RainbowStripe--Blue {
+  background-color: $color_blue;
+}
+.RainbowStripe--BlueLight {
+  background-color: $color_blue_light;
+}
+.RainbowStripe--Green {
+  background-color: $color_green;
+}
+.RainbowStripe--GreenLight {
+  background-color: $color_green_light;
+}
+.RainbowStripe--YellowGreen {
+  background-color: $color_yellow_green;
+}
+.RainbowStripe--Yellow {
+  background-color: $color_yellow;
+}
+.RainbowStripe--YellowOrange {
+  background-color: $color_yellow_orange;
+}
+.RainbowStripe--OrangeLight {
+  background-color: $color_orange_light;
+}
+.RainbowStripe--Orange {
+  background-color: $color_orange;
+}
+.RainbowStripe--RedOrange {
+  background-color: $color_red_orange;
+}
+.RainbowStripe--Red {
+  background-color: $color_red;
+}
+

@@ -1,0 +1,45 @@
+$color_blue:            #00529E;
+$color_blue_light:      #0093D7;
+$color_green:           #00833F;
+$color_green_light:     #70B125;
+$color_yellow_green:    #D5DC07;
+$color_yellow:          #EDE500;
+$color_yellow_orange:   #F2D201;
+$color_orange_light:    #F8BC08;
+$color_orange:          #F5921A;
+$color_red_orange:      #ED641A;
+$color_red:             #EA401A;
+
+$rainbow_stepped:
+    $color_blue 0%,
+    $color_blue 9%,
+
+    $color_blue_light 9%,
+    $color_blue_light 18%,
+
+    $color_green 18%,
+    $color_green 27%,
+
+    $color_green_light 27%,
+    $color_green_light 36%,
+
+    $color_yellow_green 36%,
+    $color_yellow_green 45%,
+
+    $color_yellow 45%,
+    $color_yellow 54%,
+
+    $color_yellow_orange 54%,
+    $color_yellow_orange 63%,
+
+    $color_orange_light 63%,
+    $color_orange_light 72%,
+
+    $color_orange 72%,
+    $color_orange 81%,
+
+    $color_red_orange 81%,
+    $color_red_orange 90%,
+
+    $color_red 90%,
+    $color_red 100%;

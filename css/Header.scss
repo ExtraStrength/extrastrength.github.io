@@ -1,0 +1,138 @@
+header {
+  width: 100%;
+  background-color: white;
+  position: relative;
+  overflow: hidden;
+  padding: 18% 0;
+  @include user-select(none);
+}
+
+header.Header--Workbench {
+  padding: 12% 0;
+
+  @include mobile-and-tablet {
+    padding-top: 108px;
+  }
+}
+
+header h1 {
+  color: #222;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 124px;
+  line-height: 1em;
+  letter-spacing: -6px;
+  margin: 0 0 0 -10px;
+  padding: 0 0 36px;
+  transition: all .2s;
+
+  @include mobile-and-tablet {
+    font-size: 100px;
+  }
+
+  @include mobile-and-small-tablet {
+    margin-top: 48px;
+  }
+
+  @include mobile-only {
+    font-size: 48px;
+    margin: 0 0 0 -1px;
+    letter-spacing: 0;
+  }
+}
+
+h1.h1-smaller {
+  font-size: 76px;
+  letter-spacing: -5px;
+
+  @include mobile-and-tablet {
+    margin-top: 36px;
+  }
+
+  @include mobile-only {
+    font-size: 48px;
+    margin-left: -1px;
+    letter-spacing: 0;
+    margin-top: 24px;
+  }
+}
+
+header h1.colorful {
+  color: $color_green_light;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: -webkit-linear-gradient(left, $rainbow_stepped);
+}
+
+subhead {
+  color: #222;
+  opacity: 1;
+  font-size: 28px;
+  line-height: 1.4;
+  display: block;
+  width: 100%;
+  margin: 0;
+  font-weight: 400;
+  transition: font-size .2s;
+
+  @include mobile-and-tablet {
+    font-size: 24px;
+  }
+}
+
+subhead.subhead-smaller {
+  font-size: 24px;
+
+  @include mobile-and-tablet {
+    font-size: 20px;
+  }
+}
+
+subhead.subhead-light {
+  color: hsl(0,0%,40%);
+}
+
+.BlockContainer {
+  margin: -10px;
+  @include layout;
+}
+
+.BlockContainer.BlockContainer--ColumnAt1024 {
+  @include mobile-and-tablet {
+    @include layout-vertical-reverse;
+  }
+}
+
+.Block {
+  margin: 10px;
+}
+
+.Block--WorkbenchTitle {
+  @include mobile-and-tablet {
+    text-align: center;
+  }
+}
+
+.Block--TextCenter {
+  text-align: center;
+}
+
+.Block--VerticalCenter {
+  @include layout;
+  @include layout-center;
+  @include layout-center-justified;
+}
+
+.disclaimer {
+  font-size: 14px;
+  color: #999;
+}
+
+.download-workbench-container {
+  margin: 30px 0;
+}
+
+.download-workbench-container .Button {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
