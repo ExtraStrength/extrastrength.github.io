@@ -4,12 +4,48 @@
 		"selected_items":
 		[
 			[
-				"color",
-				"color_background"
+				"m",
+				"margin"
+			],
+			[
+				"margin",
+				"margin-right"
+			],
+			[
+				"padding",
+				"padding-right"
+			],
+			[
+				"margi",
+				"margin-right"
+			],
+			[
+				"NavBar",
+				"NavBar-Logo"
+			],
+			[
+				"Nav",
+				"NavBar--HomePage"
+			],
+			[
+				"Na",
+				"NavBar-Logo"
 			],
 			[
 				"back",
-				"background-position"
+				"background-color"
+			],
+			[
+				"backg",
+				"background"
+			],
+			[
+				"rg",
+				"rgba()"
+			],
+			[
+				"color",
+				"color_background"
 			],
 			[
 				"padd",
@@ -24,20 +60,12 @@
 				"font-weight"
 			],
 			[
-				"margin",
-				"margin"
-			],
-			[
 				"min",
 				"min-width"
 			],
 			[
 				"pa",
 				"padding"
-			],
-			[
-				"margi",
-				"margin-bottom"
 			],
 			[
 				"padding-",
@@ -150,10 +178,6 @@
 			[
 				"st",
 				"st800()	 _media-queries.scss"
-			],
-			[
-				"padding",
-				"padding-bottom"
 			],
 			[
 				"remove",
@@ -452,10 +476,6 @@
 				"userListParams"
 			],
 			[
-				"backg",
-				"background-color"
-			],
-			[
 				"postin",
 				"postings_count"
 			],
@@ -494,40 +514,57 @@
 			[
 				"inlin",
 				"inline-block"
-			],
-			[
-				"backrou",
-				"background"
-			],
-			[
-				"Categor",
-				"Categories"
-			],
-			[
-				"ilin",
-				"inline-block"
-			],
-			[
-				"COLO",
-				"color_gray_middle"
-			],
-			[
-				"color_gray",
-				"color_gray_middle"
 			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 3085,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Framer.js\nFramer Studio\n\nFramer Tools\nCutting Room\nFramer Suite\nFramer Canvas\nFramer Factory\nDevelop\nWorkshop\nAnvil for Framer.js\nHammer\nFramer Toolbelt\nWorkbench for Framer",
+			"settings":
+			{
+				"buffer_size": 173,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/style.scss",
+			"settings":
+			{
+				"buffer_size": 5188,
+				"line_ending": "Unix",
+				"name": "style.scss"
+			}
+		},
+		{
+			"file": "workbench/index.html",
+			"settings":
+			{
+				"buffer_size": 3836,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 67.0,
+		"height": 400.0,
 		"selected_items":
 		[
 			[
 				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
 				"Package Control: Install Package"
 			],
 			[
@@ -548,10 +585,6 @@
 			],
 			[
 				"install ",
-				"Package Control: Install Package"
-			],
-			[
-				"insta",
 				"Package Control: Install Package"
 			],
 			[
@@ -600,6 +633,11 @@
 	},
 	"file_history":
 	[
+		"/Users/brianarmstrong/Github/extrastrength.github.io/css/style.css",
+		"/Users/brianarmstrong/Github/extrastrength.github.io/css/_layout.scss",
+		"/Users/brianarmstrong/Github/extrastrength.github.io/workbench/index.html",
+		"/Users/brianarmstrong/Github/extrastrength.github.io/README.md",
+		"/Users/brianarmstrong/Github/extrastrength.github.io/CNAME",
 		"/Users/brianarmstrong/Github/CanopyRails/app/assets/stylesheets/product-cards.scss",
 		"/Users/brianarmstrong/Github/CanopyRails/app/assets/stylesheets/nav-page-level.scss",
 		"/Users/brianarmstrong/Github/CanopyRails/app/assets/stylesheets/pivot-embed.scss",
@@ -722,12 +760,7 @@
 		"/Users/brianarmstrong/Github/CanopyRails/app/models/feature.rb",
 		"/Users/brianarmstrong/Github/CanopyRails/lib/tasks/fetch_availability.rake",
 		"/Users/brianarmstrong/Github/CanopyRails/app/assets/javascripts/blog.js",
-		"/Users/brianarmstrong/Github/CanopyRails/app/assets/stylesheets/admin/admin-header.scss",
-		"/Users/brianarmstrong/Github/CanopyRails/app/assets/javascripts/cssAnimation.jquery.js",
-		"/Users/brianarmstrong/Github/CanopyRails/app/helpers/users_helper.rb",
-		"/Users/brianarmstrong/Github/CanopyRails/app/assets/javascripts/app/new-collection.js.coffee",
-		"/Users/brianarmstrong/Github/CanopyRails/app/assets/javascripts/app/collections.js.coffee",
-		"/Users/brianarmstrong/Github/CanopyRails/app/assets/javascripts/admin/newsletter-editing.js.coffee"
+		"/Users/brianarmstrong/Github/CanopyRails/app/assets/stylesheets/admin/admin-header.scss"
 	],
 	"find":
 	{
@@ -873,6 +906,19 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"$argument",
+			"friend",
+			"need",
+			"weneed",
+			"hello",
+			"hire",
+			"ron",
+			"#",
+			"0093D7",
+			"0",
+			", ",
+			"max-width",
+			"white",
 			"48px ",
 			"shop our ",
 			"empty-state-headline",
@@ -987,20 +1033,7 @@
 			"link-card",
 			"Discover and collect amazing",
 			"trackEvent",
-			"self.dig",
-			"amazonapi",
-			"trackEvent",
-			"self.look",
-			"amazonapi",
-			"amazon",
-			"variations",
-			"first",
-			"return",
-			"self.dig",
-			"dig",
-			"lookup",
-			"amazon",
-			"facebook"
+			"self.dig"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1021,8 +1054,119 @@
 	"groups":
 	[
 		{
+			"selected": 2,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 3085,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2476,
+								2476
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 63.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"settings":
+					{
+						"buffer_size": 173,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								173,
+								173
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "css/style.scss",
+					"settings":
+					{
+						"buffer_size": 5188,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								18,
+								18
+							]
+						],
+						"settings":
+						{
+							"auto_name": "style.scss",
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "workbench/index.html",
+					"settings":
+					{
+						"buffer_size": 3836,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3723,
+								3723
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1312.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -1075,6 +1219,10 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"workbench",
+				"workbench/index.html"
+			],
 			[
 				"product.",
 				"app/models/product.rb"
@@ -1582,10 +1730,6 @@
 			[
 				"usernotification",
 				"app/views/users/_notification.html.haml"
-			],
-			[
-				"notif",
-				"app/views/users/notifications.html.haml"
 			]
 		],
 		"width": 0.0
