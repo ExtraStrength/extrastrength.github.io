@@ -15,7 +15,7 @@ color =
 	canopy_green: "#23DEBF"
 	scrim: "rgba(0,0,0,.03)"
 
-animation = 
+animation =
 	add: null
 	remove: null
 
@@ -41,65 +41,63 @@ class CollectionRow extends Layer
 		@on Events.Click, =>
 			if @inCollection
 				@removeProduct()
-			else 
+			else
 				@addProduct()
-				
+
 	stopAnimations: () =>
 		s.OtherProducts.animateStop()
 		s.ProductImageSmall.animateStop()
 		@scrim.animateStop()
-		
+
 	addProduct: () =>
-		print "Add to collection"
 		@inCollection = true
 		@stopAnimations()
-		
+
 		@productImageAnimation = s.ProductImageSmall.animate
-			properties: 
+			properties:
 				scale: 1
 				opacity: 1
 # 				x: 36
 			curve: curve.spring
-			
+
 		@scrim.animate
-			properties: 
+			properties:
 				opacity: 0
-				
+
 		s.OtherProducts.animate
-			properties: 
+			properties:
 				x: 152
 			curve: curve.spring
-			
+
 	removeProduct: () =>
-		print "Remove from collection"
 		@inCollection = false
 		@stopAnimations()
-		
+
 		@productImageAnimation = s.ProductImageSmall.animate
-			properties: 
+			properties:
 				scale: 0
 				opacity: 0
 # 				x: 0
 			curve: curve.spring
-				
+
 		@scrim.animate
-			properties: 
+			properties:
 				opacity: 1
-				
+
 		s.OtherProducts.animate
-			properties: 
+			properties:
 				x: 32
 			curve: curve.spring
-	
+
 
 activeRow = new CollectionRow
 
 class OutlinedButton extends Layer
 	constructor: (options) ->
 		super options
-		
+
 		@backgroundColor = null
-		@style = 
+		@style =
 			borderRadius: "8px"
 			border: "2px solid #23DEBF"
 
@@ -111,7 +109,7 @@ class OutlinedButton extends Layer
 # 			opacity: 0
 # 		@touchButton.style =
 # 			border: "2px solid #23DEBF"
-		
+
 		@buttonText = new Layer
 			color: color.canopy_green
 			width: @width
@@ -122,11 +120,11 @@ class OutlinedButton extends Layer
 			textAlign: "center"
 			fontFamily: "Europa"
 			lineHeight: @height - 6 + "px"
-		
+
 		@on Events.TouchStart, =>
 			@backgroundColor = color.canopy_green
 			@buttonText.color = "white"
-		
+
 		@on Events.TouchEnd, =>
 			@backgroundColor = null
 			@buttonText.color = color.canopy_green
