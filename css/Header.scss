@@ -58,10 +58,10 @@ h1.h1-smaller {
 }
 
 header h1.colorful {
-  color: $color_green_light;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-image: -webkit-linear-gradient(left, $rainbow_stepped);
+  color: $color_blue_light;
+  // -webkit-background-clip: text;
+  // -webkit-text-fill-color: transparent;
+  // background-image: -webkit-linear-gradient(left, $rainbow_stepped);
 }
 
 subhead {
